@@ -167,12 +167,20 @@ void lightLogic(void){
 	switch(savedChar){
 		case 'r':
 		case 'R':
+			//GPIOC->ODR ^= (1<<6);
+			//break;
 		case 'g':
 		case 'G':
+			//GPIOC->ODR ^= (1<<9);
+			//break;
 		case 'b':
 		case 'B':
+			//GPIOC->ODR ^= (1<<7);
+			//break;
 		case 'o':
 		case 'O':
+			//GPIOC->ODR ^= (1<<8);
+			//break;
 			transmitString("CMD?\n\r");
 			color = savedChar;
 			//wait until the RDR is done transmitting
