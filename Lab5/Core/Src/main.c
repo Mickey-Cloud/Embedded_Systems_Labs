@@ -260,7 +260,7 @@ void gyroLights(int16_t xdata, int16_t ydata){
 				GPIOC->ODR &= ~(1<<8);
 				GPIOC->ODR &= ~(1<<9);
 			}
-		}
+			}
 	}
 		
 }
